@@ -1,6 +1,3 @@
-.navbar-light {
-    background-color: #9B8A8A;
-}
 
 html body {
     background-color: #9B8A8A;
@@ -12,4 +9,16 @@ html body {
   margin-left: 100px;
   margin-right: auto;
   width: 40%;
+}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
 }

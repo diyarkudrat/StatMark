@@ -1,0 +1,93 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>StatMark</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+      .sidenav header {
+      background-color: #9B8A8A;
+      font-size: 20px;
+      line-height: 52px;
+      text-align: center;
+      padding-bottom: 15px
+
+    }
+
+    .sidenav {
+      left: 250px;
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      z-index: 1000;
+      top: 97px;
+      left: 0;
+      background-color: #9B8A8A;
+      overflow-x: hidden;
+      overflow-y: auto;
+      padding-top: 20px;
+      /* overflow: hidden;
+      min-width: px;
+      padding-bottom: 60px; */
+    }
+
+    .content {
+      width: 100%;
+      position: relative;
+      margin-right: 0;
+    }
+
+    .sidenav header a {
+      color: #fff;
+      display: block;
+      text-decoration: none;
+    }
+
+    .sidenav header a:hover {
+      color: #fff;
+    }
+
+    .sidenav a {
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+    }
+
+
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+
+    .sidenav .nav a:hover {
+      background: none;
+      color
+      : #ECEFF1;
+    }
+    .sidenav .nav a{
+      background: none;
+      border-bottom: 1px solid #455A64;
+      color: #CFD8DC;
+      font-size: 18px;
+      padding: 20px 24px;
+
+    }
+
+  </style>
+</head>
+<body style="background-color: #9B8A8A;">
+  {% include 'partials/navbar.html' %}
+  {% block content %}{% endblock %}
+
+</body>
+</html>
